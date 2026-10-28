@@ -1,0 +1,1274 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+        content="Portfólio criativo de Wendel Warlen, estudante de Publicidade e Propaganda, com projetos de design, identidade visual, podcast e web design.">
+
+    <title>Wendel Warlen | Portfólio Criativo</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <style>
+        /* =========================
+           IDENTIDADE VISUAL
+        ========================= */
+
+        :root {
+            --azul: #9CCDE5;
+            --azul-escuro: #30468E;
+            --azul-profundo: #25246F;
+            --amarelo: #F6E65A;
+            --amarelo-claro: #FFF5B8;
+            --rosa: #DE4BDD;
+            --roxo: #BD65E8;
+            --verde: #CBE9A5;
+            --verde-escuro: #426D20;
+            --papel: #FFFDF5;
+            --texto: #292929;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            background: var(--papel);
+            color: var(--texto);
+            font-family: "DM Sans", sans-serif;
+            line-height: 1.6;
+        }
+
+        h1,
+        h2,
+        h3,
+        .logo {
+            font-family: "Space Grotesk", sans-serif;
+        }
+
+        a {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        img {
+            max-width: 100%;
+            display: block;
+        }
+
+        .container {
+            width: min(1120px, 90%);
+            margin: auto;
+        }
+
+        .tag {
+            display: inline-block;
+            padding: 7px 14px;
+            border: 1px solid currentColor;
+            border-radius: 30px;
+            font-size: 12px;
+            font-weight: 700;
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+        }
+
+        .section-title {
+            font-size: clamp(2.3rem, 5vw, 4.5rem);
+            line-height: 1.05;
+            letter-spacing: -3px;
+            margin: 20px 0;
+        }
+
+        .section-description {
+            max-width: 620px;
+            font-size: 1.05rem;
+        }
+
+        /* =========================
+           MENU
+        ========================= */
+
+        header {
+            padding: 22px 0;
+            background: var(--papel);
+            border-bottom: 1px solid #e9e5d9;
+        }
+
+        .navbar {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 20px;
+        }
+
+        .logo {
+            font-size: 1.4rem;
+            font-weight: 700;
+            letter-spacing: -1px;
+            color: var(--azul-profundo);
+        }
+
+        .logo span {
+            color: var(--rosa);
+        }
+
+        .nav-links {
+            display: flex;
+            align-items: center;
+            gap: 25px;
+            list-style: none;
+            font-size: 0.9rem;
+            font-weight: 600;
+        }
+
+        .nav-links a:hover {
+            color: var(--rosa);
+        }
+
+        .nav-button {
+            background: var(--azul-profundo);
+            color: white;
+            padding: 11px 18px;
+            border-radius: 30px;
+        }
+
+        /* =========================
+           CAPA PRINCIPAL
+        ========================= */
+
+        .hero {
+            min-height: 660px;
+            display: flex;
+            align-items: center;
+            position: relative;
+            overflow: hidden;
+            background: white;
+            padding: 90px 0;
+        }
+
+        .hero::before {
+            content: "";
+            position: absolute;
+            width: 430px;
+            height: 430px;
+            right: -100px;
+            top: -130px;
+            border-radius: 50%;
+            background: var(--amarelo);
+            opacity: 0.75;
+        }
+
+        .hero::after {
+            content: "";
+            position: absolute;
+            width: 300px;
+            height: 300px;
+            left: -120px;
+            bottom: -150px;
+            border-radius: 50%;
+            background: var(--rosa);
+            opacity: 0.55;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 2;
+            max-width: 900px;
+        }
+
+        .hero h1 {
+            font-size: clamp(3.3rem, 9vw, 7.5rem);
+            line-height: 0.95;
+            letter-spacing: -7px;
+            text-transform: uppercase;
+            color: var(--azul-profundo);
+            margin: 28px 0;
+        }
+
+        .hero h1 span {
+            color: var(--rosa);
+        }
+
+        .hero p {
+            max-width: 620px;
+            font-size: clamp(1rem, 2vw, 1.25rem);
+            margin-bottom: 30px;
+        }
+
+        .hero-buttons {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 14px;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 14px 23px;
+            border-radius: 4px;
+            font-weight: 700;
+            transition: 0.2s;
+        }
+
+        .button:hover {
+            transform: translateY(-3px);
+        }
+
+        .button-primary {
+            background: var(--azul-profundo);
+            color: white;
+        }
+
+        .button-secondary {
+            border: 1px solid var(--azul-profundo);
+            color: var(--azul-profundo);
+        }
+
+        .hero-note {
+            margin-top: 65px;
+            font-size: 0.85rem;
+            font-weight: 700;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            color: var(--azul-profundo);
+        }
+
+        /* =========================
+           FAIXA DE PALAVRAS
+        ========================= */
+
+        .marquee {
+            background: var(--rosa);
+            color: white;
+            padding: 18px 0;
+            overflow: hidden;
+            white-space: nowrap;
+            font-family: "Space Grotesk", sans-serif;
+            font-size: 1.2rem;
+            font-weight: 700;
+            letter-spacing: 3px;
+        }
+
+        .marquee span {
+            display: inline-block;
+            padding-left: 20px;
+        }
+
+        /* =========================
+           SOBRE MIM
+        ========================= */
+
+        .about {
+            padding: 110px 0;
+            background: var(--amarelo-claro);
+        }
+
+        .about-grid {
+            display: grid;
+            grid-template-columns: 0.9fr 1.1fr;
+            gap: 65px;
+            align-items: center;
+        }
+
+        .about-card {
+            min-height: 380px;
+            background: var(--azul);
+            padding: 35px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            position: relative;
+            box-shadow: 10px 10px 0 var(--azul-escuro);
+            transform: rotate(-2deg);
+        }
+
+        .about-card .card-small {
+            font-size: 0.8rem;
+            font-weight: 700;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+        }
+
+        .about-card h3 {
+            font-size: clamp(2.5rem, 5vw, 4.5rem);
+            line-height: 0.95;
+            color: var(--azul-profundo);
+            text-transform: uppercase;
+        }
+
+        .about-card .signature {
+            font-size: 1.2rem;
+            font-weight: 700;
+        }
+
+        .about-text p {
+            margin-bottom: 18px;
+        }
+
+        .about-text strong {
+            color: var(--azul-profundo);
+        }
+
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 9px;
+            margin-top: 25px;
+        }
+
+        .skills span {
+            padding: 8px 12px;
+            background: white;
+            border-radius: 3px;
+            font-size: 0.85rem;
+            font-weight: 600;
+        }
+
+        /* =========================
+           PROJETOS
+        ========================= */
+
+        .projects {
+            padding: 110px 0;
+            background: var(--papel);
+        }
+
+        .projects-header {
+            margin-bottom: 50px;
+        }
+
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 35px;
+        }
+
+        .project-card {
+            background: white;
+            border: 1px solid #e9e5d9;
+            transition: 0.25s;
+        }
+
+        .project-card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 15px 35px #00000012;
+        }
+
+        .project-art {
+            min-height: 290px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 35px;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .project-art h3 {
+            font-size: clamp(2.5rem, 5vw, 4.7rem);
+            text-align: center;
+            line-height: 0.95;
+            letter-spacing: -3px;
+            text-transform: uppercase;
+        }
+
+        .art-podcast {
+            background: var(--azul);
+            color: white;
+        }
+
+        .art-podcast h3 {
+            text-shadow: 3px 3px 0 var(--azul-escuro);
+        }
+
+        .art-studio {
+            background: var(--verde);
+            color: var(--verde-escuro);
+        }
+
+        .art-design {
+            background: var(--amarelo);
+            color: var(--azul-profundo);
+        }
+
+        .art-web {
+            background: var(--azul-escuro);
+            color: white;
+        }
+
+        .art-web h3 {
+            font-size: 3.5rem;
+        }
+
+        .project-info {
+            padding: 25px;
+        }
+
+        .project-category {
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-weight: 700;
+            color: #777;
+        }
+
+        .project-info h3 {
+            font-size: 1.6rem;
+            margin: 8px 0;
+        }
+
+        .project-info p {
+            font-size: 0.95rem;
+            margin-bottom: 18px;
+        }
+
+        .project-link {
+            color: var(--azul-profundo);
+            font-weight: 700;
+            border-bottom: 1px solid currentColor;
+        }
+
+        /* =========================
+           PODCAST WILLOW POD
+        ========================= */
+
+        .podcast {
+            padding: 110px 0;
+            background: var(--azul);
+        }
+
+        .podcast-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            align-items: center;
+            gap: 60px;
+        }
+
+        .podcast-cover {
+            min-height: 430px;
+            background: var(--azul-escuro);
+            color: white;
+            padding: 35px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            position: relative;
+            overflow: hidden;
+            box-shadow: 12px 12px 0 white;
+        }
+
+        .podcast-cover::after {
+            content: "✳";
+            position: absolute;
+            right: -15px;
+            bottom: -100px;
+            font-size: 17rem;
+            color: var(--rosa);
+            opacity: 0.9;
+        }
+
+        .podcast-cover small {
+            position: relative;
+            z-index: 1;
+            letter-spacing: 3px;
+        }
+
+        .podcast-cover h3 {
+            position: relative;
+            z-index: 1;
+            font-size: clamp(3rem, 7vw, 6rem);
+            line-height: 0.8;
+            letter-spacing: -5px;
+            text-transform: uppercase;
+        }
+
+        .podcast-cover p {
+            position: relative;
+            z-index: 1;
+            font-weight: 700;
+        }
+
+        .episode-list {
+            display: grid;
+            gap: 15px;
+            margin-top: 30px;
+        }
+
+        .episode {
+            background: #ffffffa8;
+            padding: 18px;
+            display: flex;
+            align-items: center;
+            gap: 18px;
+        }
+
+        .episode-number {
+            flex-shrink: 0;
+            width: 50px;
+            height: 50px;
+            display: grid;
+            place-items: center;
+            background: var(--amarelo);
+            color: var(--azul-profundo);
+            font-weight: 700;
+            font-size: 1.2rem;
+        }
+
+        .episode h3 {
+            font-size: 1rem;
+        }
+
+        .episode p {
+            font-size: 0.85rem;
+        }
+
+        /* =========================
+           PROCESSO CRIATIVO
+        ========================= */
+
+        .process {
+            padding: 100px 0;
+            background: white;
+        }
+
+        .process-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 25px;
+            margin-top: 45px;
+        }
+
+        .process-item {
+            padding: 30px;
+            border-top: 5px solid var(--rosa);
+            background: var(--papel);
+        }
+
+        .process-item:nth-child(2) {
+            border-color: var(--azul-escuro);
+        }
+
+        .process-item:nth-child(3) {
+            border-color: var(--amarelo);
+        }
+
+        .process-item span {
+            font-size: 2.5rem;
+            font-family: "Space Grotesk", sans-serif;
+            font-weight: 700;
+            color: var(--azul-profundo);
+        }
+
+        .process-item h3 {
+            margin: 10px 0;
+            font-size: 1.4rem;
+        }
+
+        /* =========================
+           CONTATO
+        ========================= */
+
+        .contact {
+            padding: 100px 0;
+            background: var(--verde);
+            color: var(--verde-escuro);
+        }
+
+        .contact-box {
+            max-width: 800px;
+        }
+
+        .contact h2 {
+            font-size: clamp(3rem, 8vw, 6rem);
+            line-height: 0.95;
+            letter-spacing: -5px;
+            margin: 25px 0;
+        }
+
+        .contact p {
+            max-width: 580px;
+            margin-bottom: 30px;
+        }
+
+        .contact .button {
+            background: var(--verde-escuro);
+            color: white;
+        }
+
+        /* =========================
+           RODAPÉ
+        ========================= */
+
+        footer {
+            padding: 30px 0;
+            background: var(--azul-profundo);
+            color: white;
+        }
+
+        .footer-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        footer p {
+            font-size: 0.85rem;
+        }
+
+        .footer-name {
+            font-family: "Space Grotesk", sans-serif;
+            font-weight: 700;
+            letter-spacing: 1px;
+        }
+
+        /* =========================
+           RESPONSIVIDADE
+        ========================= */
+
+        @media (max-width: 800px) {
+
+            .nav-links {
+                gap: 12px;
+                font-size: 0.8rem;
+            }
+
+            .nav-button {
+                display: none;
+            }
+
+            .hero {
+                min-height: auto;
+                padding: 100px 0;
+            }
+
+            .hero h1 {
+                letter-spacing: -4px;
+            }
+
+            .about-grid,
+            .podcast-grid {
+                grid-template-columns: 1fr;
+                gap: 45px;
+            }
+
+            .projects-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .process-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .about-card {
+                min-height: 320px;
+            }
+
+            .podcast-cover {
+                min-height: 350px;
+            }
+
+            .section-title {
+                letter-spacing: -2px;
+            }
+        }
+
+        @media (max-width: 480px) {
+
+            .container {
+                width: 88%;
+            }
+
+            header {
+                padding: 17px 0;
+            }
+
+            .navbar {
+                align-items: flex-start;
+                flex-direction: column;
+            }
+
+            .nav-links {
+                width: 100%;
+                justify-content: space-between;
+                flex-wrap: wrap;
+            }
+
+            .hero h1 {
+                font-size: 3.4rem;
+            }
+
+            .hero-note {
+                margin-top: 40px;
+                font-size: 0.7rem;
+            }
+
+            .project-art {
+                min-height: 230px;
+            }
+
+            .about,
+            .projects,
+            .podcast,
+            .process,
+            .contact {
+                padding: 75px 0;
+            }
+
+            .contact h2 {
+                letter-spacing: -3px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- MENU PRINCIPAL -->
+
+    <header>
+        <div class="container navbar">
+
+            <a href="#inicio" class="logo">
+                WENDEL<span>.WARLEN</span>
+            </a>
+
+            <nav aria-label="Navegação principal">
+                <ul class="nav-links">
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#projetos">Projetos</a></li>
+                    <li><a href="#podcast">Podcast</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </nav>
+
+            <a href="#contato" class="nav-button">Vamos conversar ↗</a>
+
+        </div>
+    </header>
+
+ 
+
+        <!-- CAPA -->
+
+        <section class="hero" id="inicio">
+
+            <div class="container">
+                <div class="hero-content">
+
+                    <span class="tag">Portfólio criativo · 2026</span>
+
+                    <h1>
+                        Ideias<br>
+                        que viram<br>
+                        <span>experiências.</span>
+                    </h1>
+
+                    <p>
+                        Sou Wendel Warlen, estudante de Publicidade e Propaganda.
+                        Exploro o encontro entre comunicação, design, criatividade
+                        e tecnologia para transformar ideias em experiências visuais.
+                    </p>
+
+                    <div class="hero-buttons">
+                        <a href="#projetos" class="button button-primary">
+                            Explorar projetos ↘
+                        </a>
+
+                        <a href="#sobre" class="button button-secondary">
+                            Conheça minha história
+                        </a>
+                    </div>
+
+                    <div class="hero-note">
+                        Publicidade · Design · Web · Cultura
+                    </div>
+
+                </div>
+            </div>
+
+        </section>
+
+
+        <!-- FAIXA DECORATIVA -->
+
+        <div class="marquee" aria-label="Comunicação, design, criatividade e tecnologia">
+            <span>
+                COMUNICAÇÃO ✳ DESIGN ✳ CRIATIVIDADE ✳ TECNOLOGIA ✳
+                IDENTIDADE VISUAL ✳ CULTURA ✳
+            </span>
+        </div>
+
+
+        <!-- SOBRE MIM -->
+
+        <section class="about" id="sobre">
+
+            <div class="container about-grid">
+
+                <div class="about-card">
+
+                    <span class="card-small">Muito prazer!</span>
+
+                    <h3>
+                        Studio<br>
+                        Warlen
+                    </h3>
+
+                    <p class="signature">Wendel Warlen — Criatividade em construção.</p>
+
+                </div>
+
+                <div class="about-text">
+
+                    <span class="tag">Quem sou eu</span>
+
+                    <h2 class="section-title">
+                        Criatividade com propósito.
+                    </h2>
+
+                    <p>
+                        Minha trajetória está ligada à <strong>Publicidade e Propaganda</strong>,
+                        uma área que me permite explorar ideias, narrativas, marcas
+                        e diferentes formas de comunicação.
+                    </p>
+
+                    <p>
+                        Tenho interesse por identidade visual, direção criativa,
+                        produção de conteúdo, edição de áudio e desenvolvimento
+                        de sites. Gosto especialmente de pensar em como o design
+                        pode transformar uma informação em uma experiência.
+                    </p>
+
+                    <p>
+                        Atualmente, busco ampliar meus conhecimentos em web design
+                        e programação, conectando o olhar visual da publicidade
+                        às possibilidades da tecnologia.
+                    </p>
+
+                    <div class="skills">
+                        <span>Direção criativa</span>
+                        <span>Design visual</span>
+                        <span>Podcast</span>
+                        <span>Identidade visual</span>
+                        <span>Web design</span>
+                        <span>Comunicação</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <section class="projects" id="projetos">
+
+            <div class="container">
+
+                <div class="projects-header">
+
+                    <span class="tag">Seleção de trabalhos</span>
+
+                    <h2 class="section-title">
+                        Ideias em<br>forma de projeto.
+                    </h2>
+
+                    <p class="section-description">
+                        Uma seleção de projetos acadêmicos e experimentais
+                        que mostram meu interesse por comunicação, identidade
+                        visual, conteúdo e experiências digitais.
+                    </p>
+
+                </div>
+
+
+                <div class="projects-grid">
+
+                    <!-- PROJETO 1 -->
+
+                    <article class="project-card">
+
+                        <div class="project-art art-podcast">
+                            <h3>Willow<br>Pod</h3>
+                        </div>
+
+                        <div class="project-info">
+
+                            <span class="project-category">Podcast · Comunicação</span>
+
+                            <h3>Willow Pod</h3>
+
+                            <p>
+                                Projeto de podcast desenvolvido com uma proposta
+                                visual própria, explorando cultura, sociedade e
+                                diferentes temas por meio de conversas e conteúdo.
+                            </p>
+
+                            <a href="#podcast" class="project-link">
+                                Conheça o projeto ↗
+                            </a>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- PROJETO 2 -->
+
+                    <article class="project-card">
+
+                        <div class="project-art art-studio">
+                            <h3>Studio<br>Warlen</h3>
+                        </div>
+
+                        <div class="project-info">
+
+                            <span class="project-category">Marca pessoal · Design</span>
+
+                            <h3>Studio Warlen</h3>
+
+                            <p>
+                                Conceito de identidade visual que explora uma
+                                estética minimalista, tipografia marcante e
+                                uma paleta inspirada em tons naturais.
+                            </p>
+
+                            <a href="#contato" class="project-link">
+                                Fale comigo sobre o projeto ↗
+                            </a>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- PROJETO 3 -->
+
+                    <article class="project-card">
+
+                        <div class="project-art art-design">
+                            <h3>QCY<br>T17</h3>
+                        </div>
+
+                        <div class="project-info">
+
+                            <span class="project-category">Publicidade · Conceito</span>
+
+                            <h3>Conceito publicitário QCY T17</h3>
+
+                            <p>
+                                Estudo conceitual de comunicação para produto,
+                                com foco na apresentação visual, na mensagem
+                                publicitária e na valorização da marca.
+                            </p>
+
+                            <a href="#contato" class="project-link">
+                                Conheça meu processo ↗
+                            </a>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- PROJETO 4 -->
+
+                    <article class="project-card">
+
+                        <div class="project-art art-web">
+                            <h3>&lt;WEB<br>DESIGN /&gt;</h3>
+                        </div>
+
+                        <div class="project-info">
+
+                            <span class="project-category">Tecnologia · Estudos</span>
+
+                            <h3>Experiências para a web</h3>
+
+                            <p>
+                                Estudos de layout e interfaces digitais,
+                                unindo hierarquia visual, organização de
+                                conteúdo e os primeiros passos em HTML e CSS.
+                            </p>
+
+                            <a href="#contato" class="project-link">
+                                Vamos criar algo? ↗
+                            </a>
+
+                        </div>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- DESTAQUE DO PODCAST -->
+
+        <section class="podcast" id="podcast">
+
+            <div class="container podcast-grid">
+
+                <div class="podcast-cover">
+
+                    <small>PROJETO DE COMUNICAÇÃO · 001</small>
+
+                    <h3>
+                        Willow<br>
+                        Pod
+                    </h3>
+
+                    <p>
+                        Conversas que despertam curiosidade.
+                    </p>
+
+                </div>
+
+
+                <div class="podcast-content">
+
+                    <span class="tag">Áudio · Narrativa · Cultura</span>
+
+                    <h2 class="section-title">
+                        Uma ideia que ganhou voz.
+                    </h2>
+
+                    <p>
+                        O Willow Pod é um projeto de podcast que explora
+                        assuntos culturais e sociais por meio de conversas
+                        e episódios temáticos.
+                    </p>
+
+                    <p style="margin-top: 15px;">
+                        A proposta visual utiliza composições editoriais,
+                        recortes, texturas de papel, cores contrastantes
+                        e capas próprias para construir uma identidade
+                        reconhecível.
+                    </p>
+
+
+                    <div class="episode-list">
+
+                        <article class="episode">
+
+                            <div class="episode-number">01</div>
+
+                            <div>
+                                <h3>Os papéis de Carolina Maria de Jesus</h3>
+                                <p>
+                                    Literatura, sociedade e conversa com Mara Vidal.
+                                </p>
+                            </div>
+
+                        </article>
+
+
+                        <article class="episode">
+
+                            <div class="episode-number">02</div>
+
+                            <div>
+                                <h3>Moda popular</h3>
+                                <p>
+                                    Um episódio dedicado à moda e suas expressões.
+                                </p>
+                            </div>
+
+                        </article>
+
+                    </div>
+
+                    <p style="margin-top: 20px; font-size: 0.85rem;">
+                        Os títulos acima foram organizados com base nos layouts
+                        apresentados no portfólio.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- PROCESSO CRIATIVO -->
+
+        <section class="process">
+
+            <div class="container">
+
+                <span class="tag">Meu olhar criativo</span>
+
+                <h2 class="section-title">
+                    Como transformo<br>ideias em projetos.
+                </h2>
+
+                <p class="section-description">
+                    Cada projeto é uma oportunidade de pesquisar, experimentar
+                    e encontrar uma maneira visual de comunicar uma ideia.
+                </p>
+
+
+                <div class="process-grid">
+
+                    <article class="process-item">
+
+                        <span>01</span>
+
+                        <h3>Pesquisar</h3>
+
+                        <p>
+                            Entender o tema, o público, o contexto e a mensagem
+                            que precisa ser transmitida.
+                        </p>
+
+                    </article>
+
+
+                    <article class="process-item">
+
+                        <span>02</span>
+
+                        <h3>Experimentar</h3>
+
+                        <p>
+                            Explorar referências, tipografia, cores, composições
+                            e diferentes possibilidades visuais.
+                        </p>
+
+                    </article>
+
+
+                    <article class="process-item">
+
+                        <span>03</span>
+
+                        <h3>Comunicar</h3>
+
+                        <p>
+                            Organizar os elementos para criar uma experiência
+                            visual coerente com a proposta do projeto.
+                        </p>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+<!-- PROJETOS -->
+         <section id="podcast" class="podcast">
+    <div class="podcast-conteudo">
+        <h1 class="etiqueta">PROJETO AUTORAL</h1>
+
+        <h4>Sou Publicitário e Agora?</h4>
+
+        
+    <main>
+
+       
+    </div>
+
+    <div class="spotify-player">
+        <iframe
+            src="https://open.spotify.com/embed/show/6oPyR7ZnhCYH8VEhovDvn7?utm_source=generator"
+            width="100%"
+            height="352"
+            frameborder="0"
+            allowfullscreen
+            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+            loading="lazy"
+            title="Podcast Sou Publicitário e Agora? — Wendel Warlen"
+        ></iframe>
+    </div>
+    
+        <a
+            href="https://open.spotify.com/show/6oPyR7ZnhCYH8VEhovDvn7"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="botao-spotify"
+        >
+            Conheça o podcast ↗
+        </a>
+</section>
+
+        <!-- CONTATO -->
+
+        <section class="contact" id="contato">
+
+            <div class="container">
+
+                <div class="contact-box">
+
+                    <span class="tag">Vamos conversar?</span>
+
+                    <h2>
+                        Sua próxima ideia começa aqui.
+                    </h2>
+
+                    <p>
+                        Estou construindo minha trajetória em comunicação,
+                        design e tecnologia. Se você gostou do meu trabalho
+                        ou quer conversar sobre uma oportunidade ou projeto,
+                        entre em contato.
+                    </p>
+
+                    <!-- Substitua pelo seu e-mail verdadeiro -->
+
+                    <a href="mailto:SEUEMAIL@EXEMPLO.COM" class="button">
+                        Enviar um e-mail ↗
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- RODAPÉ -->
+
+    <footer>
+
+        <div class="container footer-content">
+
+            <p class="footer-name">
+                WENDEL WARLEN © 2026
+            </p>
+
+            <p>
+                Publicidade, design e tecnologia.
+            </p>
+
+            <a href="#inicio">
+                Voltar ao topo ↑
+            </a>
+
+        </div>
+
+    </footer>
+
+</body>
+
+</html>
